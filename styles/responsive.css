@@ -1,0 +1,14 @@
+@media screen and (max-width: 880px) {
+    .instagram__login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .instagram__phone{
+        display: none;
+    }
+    .apps__images{
+        display: flex;
+        flex-direction: row;
+    }
+}

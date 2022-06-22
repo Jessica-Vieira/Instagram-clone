@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(248, 248, 248);
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.instagram__phone{
+    background-image: url(/images/insta_celular.png);
+    background-size: 468.32px 634.15px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    height: 581.15px;
+    width: 50%;
+    margin-top: 30px;
+    position: relative;
+}
+.instagram__phone img{
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    opacity: 0;
+    transition: opacity 3s;
+}
+.instagram__phone img.selected{
+    opacity: 1;
+}
+.instagram__login{
+    width: 50%;
+}
+.login__info{
+    background-color: #fff;
+    max-width: 350px;
+    height: 378.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 10px 0;
+    padding: 0 10px;
+    border: 1px solid rgb(219,219,219);
+    border-radius: 1px;
+}
+.info__logo{
+    margin: 36px 0 12px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+.form__input{
+    position: relative;
+}
+.form__input > label{
+    position: absolute;
+    left: 0;
+    margin: 0 40px 6px 40px;
+    padding: 9px 0 7px 8px;
+    font-size: 12px;
+    color: rgb(142,142,142);
+}
+.form__input input{
+    width: 266px;
+    height: 36px;
+    padding: 7px 0 0 7px;
+    margin: 0 40px 6px 40px;
+    border-radius: 4px;
+    border: 1px solid rgb(219,219,219);
+    background-color: rgb(250,250,250);
+    
+}
+.form__input input:focus{
+    border: none;
+    outline: 1px solid rgb(128, 128, 128);
+}
+.form__input > input::placeholder{
+    opacity: 0;
+}
+.form__input > input:focus + label, .form__input > input:not(:placeholder-shown)+label{
+    transform: scale(.83333) translateY(-10px);
+    transform-origin: left;
+    transition: 0.1s;
+}
+form button{
+    width: 268px;
+    height: 30px;
+    margin: 8px 40px;
+    background-color: rgb(0,149,246);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+form button:active{
+    background-color: rgb(49, 171, 252);
+}
+.info__or{
+    display: flex;
+    align-items: center;
+    margin: 10px 40px 18px 40px;
+}
+.or__text{
+    margin: 0 18px;
+    color: rgb(142,142,142);
+}
+.or__line{
+    width: 106.5px;
+    height: 1px;
+    background-color: rgb(219,219,219);
+}
+.info__facebook button{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    color: #385185;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 8px 40px;
+}
+.facebook__logo{
+    background-image: url(/images/insta_facebook.png);
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    display: inline-block;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+.login__info a{
+    margin-top: 12px;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(0,55,107);
+}
+.login__info a:active{
+    color: rgb(129, 153, 175);
+}
+.login__sing-in{
+    background-color: #fff;
+    max-width: 350px;
+    width: 350px;
+    height: 63px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(219,219,219);
+    border-radius: 1px;
+}
+.login__sing-in a{
+    text-decoration: none;
+    color: rgb(0,149,246);
+    font-weight: 600;
+}
+.login__apps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+}
+.login__apps p{
+    margin: 10px 20px;
+    font-size: 14px;
+}
+.apps__images img{
+    margin: 10px 0;
+    height: 40px;
+    width: 136;
+}
+#appStore{
+    margin-right: 8px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+.instagram__footer{
+    margin-bottom: 52px;
+}
+.footer__links{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.links__first,.links__second{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.links__first a, .links__second a{
+    display: inline-block;
+    margin: 0 8px 12px 8px;
+    text-decoration: none;
+    color: rgb(142,142,142);
+    font-size: 12px;
+}
+.footer__container{
+    margin: 12px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: rgb(142,142,142);
+}
+.footer__container select{
+    font-size: 12px;
+    color: rgb(142,142,142);
+    background-color: rgb(248, 248, 248);
+    border: none;
+}

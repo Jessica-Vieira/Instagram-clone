@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagrem - clone</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    
+</head>
+<body>
+    <main>
+        <div class="instagram__phone">
+            <img class="selected" src="./images/insta_celular_ft2.png" alt="Foto interface do instagram">
+            <img src="./images/insta_celular_ft1.png" alt="Foto interface do instagram">
+            <img src="./images/insta_celular_ft3.png" alt="Foto interface do instagram">
+            <img src="./images/insta_celular_ft4.png" alt="Foto interface do instagram">
+        </div>
+        <div class="instagram__login">
+            <div class="login__info">
+                <div class="info__logo">
+                    <img src="./images/intagram-logo.png" alt="Logo do Instagram">
+                </div>
+                <div class="info__form">
+                    <form>
+                        <div class="form__input">
+                            <input type="text" name="user" id="user" placeholder="Telefone, nome de usuário ou email">
+                            <label for="user">Telefone, nome de usuário ou email</label>
+                        </div>
+
+                        <div class="form__input">
+                            <input type="password" name="password" id="password" placeholder="Senha">
+                            <label for="password">Senha</label>
+                        </div>
+
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+                <div class="info__or">
+                    <div class="or__line">
+
+                    </div>
+                    <div class="or__text">
+                        ou
+                    </div>
+                    <div class="or__line">
+                        
+                    </div>
+                </div>
+                <div class="info__facebook">
+                    <button>
+                        <span class="facebook__logo"></span>
+                        <span class="facebook__text">Entrar com o Facebook</span>
+                    </button>
+                </div>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+            <div class="login__sing-in">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+            <div class="login__apps">
+                <p>Obtenha o aplicativo.</p>
+                <div class="apps__images">
+                    <a id="appStore" href="#"><img src="/images/insta_appstore.png" alt="Baixar na App Store"></a>
+                    <a href="#"><img src="./images/insta_playstore.png" alt="Baixar no Google Play"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="instagram__footer">
+            <div class="footer__links">
+                <div class="links__first">
+                    <div class="first__item"><a href="#">Meta</a></div>
+                    <div class="first__item"><a href="#">Sobre</a></div>
+                    <div class="first__item"><a href="#">Blog</a></div>
+                    <div class="first__item"><a href="#">Carreiras</a></div>
+                    <div class="first__item"><a href="#">Ajuda</a></div>
+                    <div class="first__item"><a href="#">API</a></div>
+                    <div class="first__item"><a href="#">Privacidade</a></div>
+                    <div class="first__item"><a href="#">Termos</a></div>
+                    <div class="first__item"><a href="#">Principais contas</a></div>
+                    <div class="first__item"><a href="#">Hashtags</a></div>
+                    <div class="first__item"><a href="#">Localizações</a></div>
+                    <div class="first__item"><a href="#">Instagram Lite</a></div>
+                    <div class="first__item"><a href="#">Carregamento de contatos e não usuários</a></div>     
+                </div>
+                <div class="links__second">
+                    <div class="second__item"><a href="#">Dança</a></div>
+                    <div class="second__item"><a href="#">Comida e bebida</a></div>
+                    <div class="second__item"><a href="#">Casa e jardim</a></div>
+                    <div class="second__item"><a href="#">Música</a></div>
+                    <div class="second__item"><a href="#">Artes visuais</a></div>   
+                </div>
+            </div>
+            <div class="footer__container">
+                <div class="container__language">
+                    <select id="selector">
+                        <option value="Português">Português(Brasil)</option>
+                    </select>
+                </div>
+                <div class="container__copy">
+                    <p>© 2022 Instagram from Meta</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
